@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Toolkit App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-center">
+    <div class="app-container">
+        <div class="top-row">
+            <div class="title-box">Ui</div>
+            <form class="radio-group">
+                <label for="option-1" class="radio-label">
+                    <input type="radio" id="option-1" name="selector" checked>
+                    <span></span>
+                </label>
+                <label for="option-2" class="radio-label">
+                    <input type="radio" id="option-2" name="selector">
+                    <span></span>
+                </label>
+            </form>
+            <div class="switch-group">
+                <label>
+                    <div class="switch">
+                        <input type="checkbox">
+                        <div class="switch-bg"></div>
+                        <div class="switch-indicator"></div>
+                    </div>
+                    <span></span>
+                </label>
+                <label>
+                    <div class="switch">
+                        <input type="checkbox" checked>
+                        <div class="switch-bg"></div>
+                        <div class="switch-indicator"></div>
+                    </div>
+                    <span></span>
+                </label>
+            </div>
+            <div class="control-panel">
+                <div class="control-icons">
+                    <div class="icon-btn"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="icon-btn"><i class="fa-solid fa-pause"></i></div>
+                    <div class="icon-btn"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+                <div class="dropdown">
+                    <span class="dropdown-text">Select</span>
+                    <i class="fa-solid fa-chevron-down dropdown-text"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-row">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for ..." class="search-input">
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <button class="plain-btn">Button</button>
+                <div class="icon-row">
+                    <div class="icon-btn"><i class="fa-solid fa-heart app-color-pink"></i></div>
+                    <div class="icon-btn"><i class="fa-solid fa-comment app-color-blue-1"></i></div>
+                    <div class="icon-btn"><i class="fa-solid fa-bookmark app-color-blue-2"></i></div>
+                </div>
+                <div class="share-row">
+                    <button class="share-btn">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        Share
+                    </button>
+                    <button class="circle-btn">
+                        <i class="fa-solid fa-plus app-color-gray"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="chart-section">
+                <!-- Repeat this block for each color variant -->
+                <div class="bar-wrapper">
+                    <div class="bar-inner">
+                        <div class="bar-fill app-bg-blue-1"></div>
+                    </div>
+                    <div class="bar-dot"><div class="dot-fill app-bg-blue-1"></div></div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar-inner short">
+                        <div class="bar-fill app-bg-blue-2"></div>
+                    </div>
+                    <div class="bar-dot"><div class="dot-fill app-bg-blue-2"></div></div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar-inner tall">
+                        <div class="bar-fill app-bg-lavender"></div>
+                    </div>
+                    <div class="bar-dot"><div class="dot-fill app-bg-lavender"></div></div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar-inner medium">
+                        <div class="bar-fill app-bg-pink"></div>
+                    </div>
+                    <div class="bar-dot"><div class="dot-fill app-bg-pink"></div></div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar-inner x-tall">
+                        <div class="bar-fill app-bg-teal"></div>
+                    </div>
+                    <div class="bar-dot"><div class="dot-fill app-bg-teal"></div></div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar-inner">
+                        <div class="bar-fill app-bg-green"></div>
+                    </div>
+                    <div class="bar-dot"><div class="dot-fill app-bg-green"></div></div>
+                </div>
+                <button onclick="toggleDarkMode()">Dark Mode</button>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const toggleDarkMode = () => {
+      document.documentElement.classList.toggle('dark');
+    };
+  </script>
+  
+
+
+  
+
+</html>
